@@ -1,4 +1,4 @@
-module github.com/your-username/your-module
+module github.com/Devishunter/REST_API_JAVACODE_TEST_TASK
 
 go 1.22.0
 
