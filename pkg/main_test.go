@@ -1,4 +1,4 @@
-package main
+package pkg
 
 import (
 	"bytes"
@@ -6,6 +6,8 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/Devishunter/REST_API_JAVACODE_TEST_TASK/internal"
 )
 
 func TestHandleWalletOperation(t *testing.T) {
@@ -21,7 +23,7 @@ func TestHandleWalletOperation(t *testing.T) {
 	}
 
 	rr := httptest.NewRecorder()
-	handler := http.HandlerFunc(HandleWalletOperation) // Используйте экспортированную функцию
+	handler := http.HandlerFunc(internal.HandleWalletOperation) // Используйте импортированную функцию
 	handler.ServeHTTP(rr, req)
 
 	if status := rr.Code; status != http.StatusOK {

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/REST_API_JAVACODE_TEST_TASK/internal"
+	"github.com/Devishunter/REST_API_JAVACODE_TEST_TASK/internal"
 	"github.com/gorilla/mux"
 )
 
